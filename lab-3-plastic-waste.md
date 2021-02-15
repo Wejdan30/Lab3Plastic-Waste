@@ -1,11 +1,11 @@
 Lab 3 - Plastic Waste
 ================
 DSC 200 - Data Science I
-2021-02-06
+15/2/2021
 
-Student Name:
+Student Name: Wejdan Abdulrhman Al-harthy
 
-Student ID:
+Student ID: 2201001406
 
 ``` r
 library(tidyverse)

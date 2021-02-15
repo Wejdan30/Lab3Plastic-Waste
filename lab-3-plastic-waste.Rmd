@@ -1,13 +1,13 @@
 ---
 title: "Lab 3 - Plastic Waste"
 author: "DSC 200 - Data Science I"
-date: "`r Sys.Date()`"
+date:  "15/2/2021"
 output: github_document
 ---
 
-Student Name:
+Student Name: Wejdan Abdulrhman Al-harthy
 
-Student ID:
+Student ID: 2201001406
 
 ```{r include = FALSE}
 knitr::opts_chunk$set(eval = FALSE)
