@@ -156,7 +156,18 @@ E6.  Colour the points in the scatterplot by continent.
     
 ```{r plastic_waste_per_cap-scatter-by-continent}
 
+ggplot(data = plastic_waste,
+       mapping = aes(x = mismanaged_plastic_waste_per_cap,color = continent, fill = continent,
+                     y = plastic_waste_per_cap)) +
+    geom_point()
+
 ```
+Answer:
+Relationship with Europe (positive), Africa is the most (poorly managed plastic waste per cap) and (North America) is the country with the largest amount of plastic waste.
+ 
+
+
+    
 
 E7.  Visualize the relationship between plastic waste per capita and total population as well as plastic waste per capita and coastal population.
     You will need to make two separate plots.
