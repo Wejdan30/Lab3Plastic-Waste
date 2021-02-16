@@ -3,7 +3,7 @@ Lab 3 - Plastic Waste
 DSC 200 - Data Science I
 15/2/2021
 
-Student Name: Wejdan Abdulrhman Al-harthy
+Student Name: wejdan Abdulrhman Al-harthy
 
 Student ID: 2201001406
 
@@ -229,6 +229,28 @@ E8. Recreate the following plot, and interpret what you see in context
 of the data.
 
 ![](lab-3-plastic-waste_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+
+``` r
+plastic_waste %>% 
+  mutate(coastal_pop_prop = coastal_pop / total_pop) %>%
+  filter(plastic_waste_per_cap < 3) %>%
+  ggplot(aes(x = coastal_pop_prop, y = plastic_waste_per_cap, color = continent)) + 
+    geom_point() +
+    geom_smooth(color = "black",method="glm") +
+    scale_color_viridis_d() +
+    labs(x = "Coastal population proportion (Coastal / total population)", 
+         y = "Plastic waste per capita ", 
+         color = "Continent",
+         title = "Plastic waste vs. coastal population proportion",
+         subtitle = "by continent") +
+    theme_minimal()
+```
+
+Answer: gemo\_smooth(Aids the eye in seeing patterns in the persence of
+overplotting also it’s help us to do see the curve of the data and
+analyis it via a different way) the costal cites in asia and north
+america is have the most plastic waster per capita and the lowest
+population
 
 Knit, *commit (with an appropriate message), and push your changes to
 GitHub with an appropriate commit message. Make sure to commit and push
